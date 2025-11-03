@@ -1,55 +1,39 @@
-# Prerequisites
-*.d
+# === Build and binary outputs ===
+/build/
+/*.o
+/*.out
+/*.exe
+/logforge
 
-# Object files
-*.o
-*.ko
-*.obj
-*.elf
+# === Logs and runtime data ===
+/logs/
+/*.log
 
-# Linker output
-*.ilk
-*.map
-*.exp
+# === OS and editor files ===
+.DS_Store
+Thumbs.db
 
-# Precompiled Headers
-*.gch
-*.pch
+# === Editor configs ===
+.vscode/
+.idea/
+*.swp
+*.swo
 
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
+# === Core dumps and debug ===
+core
+core.*
+*.core
 
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
-
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
-
-# Debug files
+# === Dependency cache ===
 *.dSYM/
-*.su
-*.idb
+*.obj
+*.a
+*.so
+*.dll
+*.lib
 *.pdb
 
-# Kernel Module Compile Results
-*.mod*
-*.cmd
-.tmp_versions/
-modules.order
-Module.symvers
-Mkfile.old
-dkms.conf
-
-# debug information files
-*.dwo
+# === Temporary / test artifacts ===
+*.tmp
+*.bak
+*.old
